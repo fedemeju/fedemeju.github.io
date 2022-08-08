@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Bowling</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Righteous&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- transitions -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- archivo css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+   
+   <!-- nav -->
+   <header >
+    <nav class="nav">
+        <a  href="index.html">
+            <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
+        </a>
+        <ul class="nav__ul">
+            <li><a class="boton__nav" href="index.html">HOME</a></li>
+            <li><a class="boton__nav" href="./pages/eventos.html">EVENTOS</a></li>
+            <li><a class="boton__nav" href="./pages/cumples.html">CUMPLES</a></li>
+            <li><a class="boton__nav" href="./pages/galeria.html">GALERIA</a></li>
+            <li><a class="boton__nav" href="./pages/contacto.html">CONTACTO</a></li> 
+        </ul>
+            <img class="bola" src="./images/ball.png" alt="bolabowling">
+            <img class="palo" src="./images/palo.png" alt="palobowling">
+    </nav>
+</header>
+
+
+<!-- nav responsive -->
+
+<header class="nav__responsive">
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img class="bola" src="./images/ball.png" alt="bolabowling">
+            <img class="palo" src="./images/palo.png" alt="palobowling">
+          
+          <a  href="index.html">
+            <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a  href="index.html">
+                <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
+              </a>
+              
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a class="boton__nav boton__res" href="index.html">HOME</a></li>
+                <li><a class="boton__nav boton__res" href="./pages/eventos.html">EVENTOS</a></li>
+                <li><a class="boton__nav boton__res" href="./pages/cumples.html">CUMPLES</a></li>
+                <li><a class="boton__nav boton__res" href="./pages/galeria.html">GALERIA</a></li>
+                <li><a class="boton__nav boton__res" href="./pages/contacto.html">CONTACTO</a></li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>    
+
+  <!-- <article class="home">
+      <div class="titulo_p" data-aos="fade-up">
+          <h1>Snack Bowling</h1>
+          <img  src="./images/logoMain.png" alt="logo snack ristrel">
+  
+      </div>
+      <div class="home__container">
+          <h2>Restaurante</h2>
+          <h3>Amplia propuesta gastronomica</h3>
+          <div class="image__resto">
+              <a  class="boton__container" href="https://www.queresto.com/snackbowling" target="_blank">VER CARTA</a>
+          </div>    
+      </div>
+      <div class="home__container">
+          <h2>Bowling</h2>
+          <h3>6 pistas de bowling profecionales</h3>
+          <img class="image__container" src="images/snack.png" alt="bowlingSnack">
+      </div>
+
+      <div class="home__container">
+          <h2>Pool</h2>
+          <h3>Sector exclusivo con 5 mesas de pool</h3>
+          <img class="image__container" src="images/snackpool.jpg" alt="bowlingSnack">
+      </div>
+
+  </article> -->
+
+
+      <section class="home__ristrel" >
+        <div class="home__container">
+          <h1 class="main__title" id="home">Ristrel Food House</h1>
+          <p>Amplia propuesta gastronomica</p>
+          <a href="https://queresto.com/snackbowling" class="boton__home">Menu</a>
+          <a href="#nosotros">
+            <i class="fa-solid fa-chevron-down flecha"></i>
+          </a>
+        </div>
+      </section>
+
+
+      <article class="us" data-aos="fade-up" id="nosotros">
+        <div class="us__container">
+            <h2>Nosotros</h2>
+            <h3 class="subtitulo__nosotros">Desde 1967</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, sit veniam ut delectus labore minima maiores iusto hic eius fugit autem rem qui explicabo sequi illum. Debitis quas minima consequuntur?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quis corporis provident harum pariatur dolorem, perferendis quia. Quibusdam numquam fugit minima perferendis eius necessitatibus quae eum, quos, saepe vero quis.
+            </p>
+        </div>
+        <div class="us__container" data-aos="zoom-in">
+           <img src="./images/snackpool.jpg" class="us__image__container" alt="snack bowling pool">
+        </div>
+      </article>
+       <article class="us__2" data-aos="fade-up">
+            <div class="us__container">
+                <h2>Un Clasico en zona norte</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, sit veniam ut delectus labore minima maiores iusto hic eius fugit autem rem qui explicabo sequi illum. Debitis quas minima consequuntur?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quis corporis provident harum pariatur dolorem, perferendis quia. Quibusdam numquam fugit minima perferendis eius necessitatibus quae eum, quos, saepe vero quis
+                </p>
+            </div>
+            <div class="us__container">
+               <img  data-aos="zoom-in" src="./images/snack.png" class="us__image__container" alt="snack bowling pool">
+            </div>
+       </article>
+
+ <section class="actividad" id="actividad" data-aos="fade-up">
+  <h2>MULTIESPACIO</h2>
+  <div class="actividad__container container">
+    <div class="tipo">
+      <div class="img-container">
+        <img src="./images/snack.png" alt="error" />
+        <div class="img-content">
+          <h3>BOWLING</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tipo">
+      <div class="img-container">
+        <img src="./images/pool.jpg" alt="error" />
+        <div class="img-content">
+          <h3>POOL</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tipo">
+      <div class="img-container">
+        <img src="./images/bife.jpg" alt="error" />
+        <div class="img-content">
+          <h3>RESTAURANTE</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tipo">
+      <div class="img-container">
+        <img src="./images/pelotero.JPG" alt="error" />
+        <div class="img-content">
+          <h3>PELOTERO</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>  
+
+
+    <footer class="footer">
+        <div class="footer__redes"> 
+          <a href="https://instagram.com/snackbowling" target="_blank" class="logoFooter">
+            <i class="fa-brands fa-instagram logo__footer"></i>
+          </a>  
+          <a href="https://facebook.com/snackbowling" target="_blank" class="logoFooter">
+            <i class="fa-brands fa-facebook logo__footer"></i>
+          </a>  
+          <a href="https://www.linkedin.com/company/71763114/" target="_blank" class="logoFooter">
+            <i class="fa-brands fa-linkedin logo__footer"></i>
+          </a>  
+        </div>
+        <div class="footer__info ">
+            <a href="https://www.google.com/maps/place/Snack+Bowling+%26+Restaurant/@-34.4907,-58.4855,15z/data=!4m2!3m1!1s0x0:0x4265a336265d66ed?sa=X&ved=2ahUKEwie0orZl7j5AhV4BLkGHdBvBt8Q_BJ6BAhzEAU">Avenida del libertador 13054 - martinez</a>            
+            <a href="tel:47928009">4792-8009</a>
+        </div>  
+    </footer>
+
+
+    <!-- script botstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8cced7e539.js" crossorigin="anonymous"></script>
+</body>
+</html>

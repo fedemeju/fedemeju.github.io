@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Bowling</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Righteous&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- archivo css -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+
+
+</head>
+<body>
+    
+   <!-- nav -->
+   <header >
+    <nav class="nav">
+        <a  href="index.html">
+            <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
+        </a>
+        <ul class="nav__ul">
+            <li><a class="boton__nav" href="../index.html">HOME</a></li>
+            <li><a class="boton__nav" href="../pages/eventos.html">EVENTOS</a></li>
+            <li><a class="boton__nav" href="../pages/cumples.html">CUMPLES</a></li>
+            <li><a class="boton__nav" href="../pages/galeria.html">GALERIA</a></li>
+            <li><a class="boton__nav" href="../pages/contacto.html">CONTACTO</a></li> 
+        </ul>
+            <img class="bola" src="../images/ball.png" alt="bolabowling">
+            <img class="palo" src="../images/palo.png" alt="palobowling">
+    </nav>
+</header>
+
+
+<!-- nav responsive -->
+
+<header class="nav__responsive">
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img class="bola" src="../images/ball.png" alt="bolabowling">
+            <img class="palo" src="../images/palo.png" alt="palobowling">
+          
+          <a  href="index.html">
+            <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a  href="index.html">
+                <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
+              </a>
+              
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a class="boton__nav boton__res" href="../index.html">HOME</a></li>
+                <li><a class="boton__nav boton__res" href="../pages/eventos.html">EVENTOS</a></li>
+                <li><a class="boton__nav boton__res" href="../pages/cumples.html">CUMPLES</a></li>
+                <li><a class="boton__nav boton__res" href="../pages/galeria.html">GALERIA</a></li>
+                <li><a class="boton__nav boton__res" href="../pages/contacto.html">CONTACTO</a></li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>  
+
+<div class="titulo__contacto">
+    <h2 >Contacto</h2>
+</div>
+
+<section class="formulario" >
+    
+    <article class="contacto" >
+        
+        
+        
+        <form action="#">
+            
+             <div>
+                 <input type="text" placeholder="NOMBRE">
+             </div>
+            <div>
+                <label for="email">Decime tu email:
+                    <input type="email" placeholder="aaa@bbb.com" name="email" required>
+                </label>	
+            </div>
+
+            <input type="number" placeholder="DECIME TU EDAD">
+            </div>
+
+            <div><p>Que hicite en tu visita?</p>
+                <div>Comida
+                    <input type="checkbox" name="lado" value="comida">
+                </div>
+                <div>Bowling
+                    <input type="checkbox" name="lado" value="bowling">
+                </div>
+                <div>Pool
+                    <input type="checkbox" name="lado" value="pool">
+                </div>
+                <div>Ninguna
+                    <input type="checkbox" name="lado" value="cero">
+                </div>
+
+            </div>
+            <p>Que letra te gusta mas?</p>
+            <select name="letra" id="letra"> 
+                <option value="x">POOL</option>
+                <option value="y">BOWLING</option>
+            </select>
+            <div>Queres recibir info sobre nosotros?
+            <input type="checkbox" name="acepta" value="1" required></div>
+            <input type="submit" value="EVIAR">
+            <input type="reset" value="RESET">
+        </form>
+
+        
+ </article>
+ </section>
+
+ <footer class="footer">
+    <div class="footer__redes"> 
+      <a href="https://instagram.com/snackbowling" target="_blank" class="logoFooter">
+        <i class="fa-brands fa-instagram logo__footer"></i>
+      </a>  
+      <a href="https://facebook.com/snackbowling" target="_blank" class="logoFooter">
+        <i class="fa-brands fa-facebook logo__footer"></i>
+      </a>  
+      <a href="https://www.linkedin.com/company/71763114/" target="_blank" class="logoFooter">
+        <i class="fa-brands fa-linkedin logo__footer"></i>
+      </a>  
+    </div>
+    <div class="footer__info ">
+        <a href="https://www.google.com/maps/place/Snack+Bowling+%26+Restaurant/@-34.4907,-58.4855,15z/data=!4m2!3m1!1s0x0:0x4265a336265d66ed?sa=X&ved=2ahUKEwie0orZl7j5AhV4BLkGHdBvBt8Q_BJ6BAhzEAU">Avenida del libertador 13054 - martinez</a>            
+        <a href="tel:47928009">4792-8009</a>
+    </div>  
+</footer>
+    <!-- script botstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+        <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8cced7e539.js" crossorigin="anonymous"></script>
+</body>
+</html>
