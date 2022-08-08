@@ -127,6 +127,8 @@ html{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+
   }
   
   .home__container {
@@ -144,9 +146,11 @@ html{
   .flecha{
     position: absolute;
     bottom: 20px;
+    left: 48.5%;
     text-decoration: none;
     color: var(--claro);
     font-size: 50px;
+    text-align: center;
 
   }
   
@@ -175,8 +179,10 @@ html{
 }
 /* actividades */
   .actividad {
+    margin-top: 15px;
     padding: 5rem 0 10rem 0;
     background: var(--claro);
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
   }
   
   .actividad h2 {
@@ -371,7 +377,9 @@ html{
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 }
 
-
+.us{
+    margin-top: 15px;
+}
 .us__2{
     background: var(--medio);
 }
@@ -853,6 +861,12 @@ h2{
     .img-container{
 
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5))
+    }
+    .flecha{
+        left: 45%;
+    }
+    .us{
+        height: 100vh;
     }
 }
 
