@@ -123,9 +123,9 @@ html{
         rgba(240, 240, 240, 0.144),
         rgba(255, 255, 255, 0.336)
       ),
-      url("../images/resto.jpg");
+      url("../images/bife.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position:top;
     background-repeat: no-repeat;
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 
