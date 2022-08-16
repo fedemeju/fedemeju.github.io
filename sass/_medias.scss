@@ -1,0 +1,148 @@
+
+@media only screen and (max-widht: 500px) {
+    .nav{
+        display: none;
+    }
+   
+}
+
+@media (max-width: 800px){
+    .nav{
+        display: none;
+    }
+    .nav__responsive{
+        display: flex;
+    }
+    .titulo__cumples h2{
+        font-size: 3rem;
+    }
+    .img__cumple{
+        width: 110px;
+    }
+    .titulo_p img{
+        width: 350px;
+        height: 77px; 
+        /* display: none; */
+    }
+    .boton__nav{
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+    .boton__nav:hover{
+        font-size: 1.7rem;
+    }
+    .img-container{
+        background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5))
+    }
+    .flecha{
+        left: 40%;
+        font-size: 75px;
+    }
+
+}
+
+@media (max-width: 950px){  
+    
+    .bola{
+        animation-duration: 3s;
+    } 
+
+    .palo{
+        animation-duration: 3s;
+        animation-delay: 2.5s;
+    }
+    .logoSnack{
+        left: 20px;
+    }
+
+    .actividad__container{
+        flex-wrap: wrap;
+    }
+
+    .home__ristrel{
+        height: 100vh;
+    }
+
+    .actividad{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){  
+    .image__resto{
+        height: 280px;
+    }
+    .bola{
+        animation-duration: 3s;
+        right: -10px;
+    } 
+
+    .palo{
+        animation-duration: 3s;
+        animation-delay: 2.4s;
+    }
+
+        @keyframes rodar{
+        from{
+            left: 100%;
+        }
+        to{
+            left: -18px;
+            transform: rotate(-730deg);
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .galeria__container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .galeria__titulo{
+        grid-column-start: span 4;
+        font-size: 5rem;
+    }
+    .galeria__imagen:nth-child(2),
+    .galeria__imagen:nth-child(10){
+       grid-row-start: span 2;
+       grid-column-start: span 2;
+    }
+    .galeria__imagen:nth-child(3),
+    .galeria__imagen:nth-child(5),
+    .galeria__imagen:nth-child(8){
+        grid-row-start: span 2;
+     }
+    .galeria__imagen:nth-child(4){
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+     }
+
+     .galeria__imagen:nth-child(11){
+        grid-row-start: span 2;
+        grid-column-start: span 4;
+     }
+ 
+ }
+
+ @media (min-width: 900px){
+    .nav__responsive{
+        display: none;
+    }
+
+    .actividad__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+ }
+
+ @media (min-width: 1100px){
+    .card-group{
+        display: none;
+    }
+    .novedades{
+        display: none;
+    }
+
+ }

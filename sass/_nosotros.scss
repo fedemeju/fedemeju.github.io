@@ -1,0 +1,76 @@
+.us, .us__2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background: var(--claro);
+    padding-bottom: 10px;
+    padding-top: 90px;
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+}
+
+.us{
+    margin-top: 15px;
+    h2{
+        font-size: 4.5rem;
+    }
+}
+.us__2{
+    background: var(--oscuro);
+    flex-direction: row-reverse;
+    h2{
+        font-size: 2.5rem;
+        color: var(--claro);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    p{
+        color: var(--medio);
+    }
+    .us__container2{
+        height: 350px;
+        width: clamp(300px,40%,45%);
+        background: url("../images/viejo.jpg");
+        background-size: cover;
+        transition: all 1s;
+        margin-bottom: 20px;
+              &:hover{
+                background: url("../images/snack.png");
+                background-size: cover;
+            
+            }
+    }
+
+}
+
+
+.us__container{
+    min-height: 450px;
+    width: clamp(450px,40%,45%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    p{
+        font-size: clamp(1rem,1.2rem,2rem);
+    }
+    .us__image__container{
+        width: 95%;
+        transition: width 1s;
+        box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.4);
+    }
+
+.subtitulo__nosotros{
+    color: var(--claro);
+    font-size: 2rem;
+}
+    
+}
+
+
+

@@ -12,68 +12,37 @@
     <!-- transitions -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- archivo css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sass.css">
 
 </head>
 <body>
     
    
-   <!-- nav -->
-   <header >
-    <nav class="nav">
+
+<!-- nav-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
         <a  href="index.html">
             <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
         </a>
-        <ul class="nav__ul">
-            <li><a class="boton__nav" href="index.html">HOME</a></li>
-            <li><a class="boton__nav" href="./pages/eventos.html">EVENTOS</a></li>
-            <li><a class="boton__nav" href="./pages/cumples.html">CUMPLES</a></li>
-            <li><a class="boton__nav" href="./pages/galeria.html">GALERIA</a></li>
-            <li><a class="boton__nav" href="./pages/contacto.html">CONTACTO</a></li> 
-        </ul>
-            <img class="bola" src="./images/ball.png" alt="bolabowling">
-            <img class="palo" src="./images/palo.png" alt="palobowling">
-    </nav>
-</header>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+            <li><a class="boton__res" href="index.html">HOME</a></li>
+            <li><a class="boton__res" href="./pages/eventos.html">EVENTOS</a></li>
+            <li><a class="boton__res" href="./pages/cumples.html">CUMPLES</a></li>
+            <li><a class="boton__res" href="./pages/galeria.html">GALERIA</a></li>
+            <li><a class="boton__res" href="./pages/contacto.html">CONTACTO</a></li> 
+    </ul>
+    <img class="bola" src="./images/ball.png" alt="bolabowling">
+    <img class="palo" src="./images/palo.png" alt="palobowling">
+  </section>
 
 
-<!-- nav responsive -->
 
-<header class="nav__responsive">
-
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <img class="bola" src="./images/ball.png" alt="bolabowling">
-            <img class="palo" src="./images/palo.png" alt="palobowling">
-          
-          <a  href="index.html">
-            <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <a  href="index.html">
-                <img class="logoSnack" src="./images/logo.png" alt="logo snack ristrel" >
-              </a>
-              
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li><a class="boton__nav boton__res" href="index.html">HOME</a></li>
-                <li><a class="boton__nav boton__res" href="./pages/eventos.html">EVENTOS</a></li>
-                <li><a class="boton__nav boton__res" href="./pages/cumples.html">CUMPLES</a></li>
-                <li><a class="boton__nav boton__res" href="./pages/galeria.html">GALERIA</a></li>
-                <li><a class="boton__nav boton__res" href="./pages/contacto.html">CONTACTO</a></li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-      </nav>
-</header>    
 
       <section class="home__ristrel" >
         <div class="home__container">
@@ -86,6 +55,7 @@
         </div>
         <div id="nosotros"></div>
       </section>
+
 
 
       <article class="us" data-aos="fade-left" >
@@ -111,6 +81,59 @@
             </div>
             <div class="us__container2"></div>
        </article>
+
+
+
+       <section class="novedades" data-aos="fade-up">        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/rojo.png" class="d-block w-100 carousel-img" alt="juga al palo rojo">
+            </div>
+            <div class="carousel-item" ><a href="./pages/cumples.html">
+              <img src="./images/cumple.png" class="d-block w-100 carousel-img" alt="cumples infantiles">
+            </a>
+            </div>
+            <div class="carousel-item"><a href="./pages/eventos.html">
+              <img src="./images/eventos.jpg" class="d-block w-100 carousel-img" alt="eventos">
+            </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+
+      <div class="card-group">
+        <div class="card">
+          <img src="./images/snack.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BOWLING</h5>
+            <p class="card-text">6 pistas de bowling profecionales</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/pool.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">POOL</h5>
+            <p class="card-text">5 mesas de pool</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/bife.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RESTAURANTE</h5>
+            <p class="card-text">Contamos con una amplia propuesta gastronomica</p>
+          </div>
+        </div>
+      </div>
 
  <section class="actividad" id="actividad" data-aos="fade-up">
   <h2>MULTIESPACIO</h2>
