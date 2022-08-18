@@ -15,7 +15,8 @@
 
 
 
-
+$claro : rgb(235, 229, 225);
+$oscuro: rgb(53, 45, 43);
 
   
 @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -38,8 +39,8 @@ html, body {
 
 /* CARDS*/
 .card-body{
-    background: var(--oscuro);
-    color: var(--claro);
+    background: $oscuro;
+    color: $claro;
     text-align: center;
 }
 .card-body h5{
