@@ -31,7 +31,7 @@
     }
     .us__container2{
         height: 350px;
-        width: clamp(300px,40%,45%);
+        width: clamp(350px,40%,45%);
         background: url("../images/viejo.jpg");
         background-size: cover;
         transition: all 1s;
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 0 12px 0 12px;
     p{
         font-size: clamp(1rem,1.2rem,2rem);
     }
@@ -66,7 +66,7 @@
     }
 
 .subtitulo__nosotros{
-    color: var(--claro);
+    color: var(--medio);
     font-size: 2rem;
 }
     

@@ -7,6 +7,8 @@
 @import "eventos";
 @import "actividades";
 @import "cumples";
+@import "galeria";
+@import "contacto";
 @import "footer";
 @import "animaciones";
 @import "medias";
@@ -32,144 +34,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(53, 45, 43,0.95);
 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
-  height: 75px;
-  padding: 1em;
-  position: fixed;
-  width: 100vw; 
-  z-index: 200;
-  border-bottom: 10px solid rgba(90, 90, 90, 0.63);
-
-}
-
-.boton__res{
-
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    text-align: center;
-    z-index: 180;
-    color: var(--claro);
-    transition: all 0.5s;
-    font-size: 1rem;
-    
-          &:hover{
-            color: rgb(228, 228, 228);
-            font-size: 1.15rem;
-        }
-}
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: 0;
-  margin-top: 25px;
-}
-
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 20px;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-}
 
 /* CARDS*/
 .card-body{
@@ -223,69 +88,6 @@ html, body {
 
 /*fin FOOTER inicio GALERIA*/
 
-.grid__container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px calc(100vh - 140px) 70px;
-    grid-template-areas: 
-    'header'
-    'galeria'
-    'galeria'
-    'galeria'
-    'footer';
-    
-}
-
-
-.galeria__container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 150px;
-    padding: 20px;
-    grid-gap: 10px;
-    grid-area: galeria;
-    margin-top: 100px;
-    background: var(--claro);
-    
-}
-
-.galeria__titulo{
-    grid-column-start: span 3 ;
-    text-align: center;
-}
-.galeria__imagen{
-    position: relative;
-    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
-}
-
-.galeria__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.galeria__imagen:nth-child(3){
-    grid-column-start: span 2;
-}
-.galeria__imagen:nth-child(4){
-    grid-row-start: span 3;
-    grid-column-start: span 2;
-}
-.galeria__imagen:nth-child(5){
-    grid-row-start: span 3;
-}
-.galeria__imagen:nth-child(6),
-.galeria__imagen:nth-child(9){
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-.galeria__imagen:nth-child(7){
-    grid-row-start: span 2;
-}
-.galeria__imagen:nth-child(11){
-    grid-column-start: span 3;
-}
-/*fin GALERIA inicio MEDIAS*/
 
 
 

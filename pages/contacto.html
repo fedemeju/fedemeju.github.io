@@ -19,68 +19,46 @@
 </head>
 <body>
     
-   <!-- nav -->
-   <header >
-    <nav class="nav">
+<!-- nav-->
+
+  <section class="top-nav">
         <a  href="index.html">
             <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
         </a>
-        <ul class="nav__ul">
-            <li><a class="boton__nav" href="../index.html">HOME</a></li>
-            <li><a class="boton__nav" href="../pages/eventos.html">EVENTOS</a></li>
-            <li><a class="boton__nav" href="../pages/cumples.html">CUMPLES</a></li>
-            <li><a class="boton__nav" href="../pages/galeria.html">GALERIA</a></li>
-            <li><a class="boton__nav" href="../pages/contacto.html">CONTACTO</a></li> 
-        </ul>
-            <img class="bola" src="../images/ball.png" alt="bolabowling">
-            <img class="palo" src="../images/palo.png" alt="palobowling">
-    </nav>
-</header>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu-nav">
+            <li><a class="boton__res" href="../index.html">HOME</a></li>
+            <li><a class="boton__res" href="eventos.html">EVENTOS</a></li>
+            <li><a class="boton__res" href="cumples.html">CUMPLES</a></li>
+            <li><a class="boton__res" href="galeria.html">GALERIA</a></li>
+            <li><a class="boton__res" href="contacto.html">CONTACTO</a></li> 
+    </ul>
+    <img class="bola" src="../images/ball.png" alt="bolabowling">
+    <img class="palo" src="../images/palo.png" alt="palobowling">
+  </section>
 
 
-<!-- nav responsive -->
 
-<header class="nav__responsive">
-
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <img class="bola" src="../images/ball.png" alt="bolabowling">
-            <img class="palo" src="../images/palo.png" alt="palobowling">
-          
-          <a  href="index.html">
-            <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <a  href="index.html">
-                <img class="logoSnack" src="../images/logo.png" alt="logo snack ristrel" >
-              </a>
-              
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li><a class="boton__nav boton__res" href="../index.html">HOME</a></li>
-                <li><a class="boton__nav boton__res" href="../pages/eventos.html">EVENTOS</a></li>
-                <li><a class="boton__nav boton__res" href="../pages/cumples.html">CUMPLES</a></li>
-                <li><a class="boton__nav boton__res" href="../pages/galeria.html">GALERIA</a></li>
-                <li><a class="boton__nav boton__res" href="../pages/contacto.html">CONTACTO</a></li>
-              </ul>
-              
-            </div>
-          </div>
+<div class="container">
+    <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+            <h2 class="titulo__contacto">Contacto</h2>
+            <input type="text" class="field" placeholder="Nombre">
+            <input type="email" class="field" placeholder="Email">
+            <input type="text" class="field" placeholder="Asunto">
+            <textarea placeholder="Dejanos tu consulta" class="field"></textarea>
+            <button class="btn">Enviar</button>
         </div>
-      </nav>
-</header>  
-
-<div class="titulo__contacto">
-    <h2 >Contacto</h2>
+    </div>
 </div>
 
-<section class="formulario" >
+
+
+<!-- <section class="formulario" >
     
     <article class="contacto" >
         
@@ -128,7 +106,7 @@
 
         
  </article>
- </section>
+ </section> -->
 
  <footer class="footer">
     <div class="footer__redes"> 
