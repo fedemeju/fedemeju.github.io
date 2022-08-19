@@ -1,4 +1,13 @@
 
+.grid__layout{
+	display: grid;
+	grid-template-areas: 
+	'header'
+	'contacto'
+	'footer';
+	grid-template-rows: 70px 1fr 200px;
+}
+
 
 .container{
 	position: relative;
@@ -7,7 +16,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 160px 15px 50px 15px;
+	padding: 50px 15px 50px 15px;
+	grid-area: contacto;
 }
 
 .container:after{
