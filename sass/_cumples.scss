@@ -1,16 +1,19 @@
+
 .cumples__snack{
     background: linear-gradient(rgba(243, 227, 196, 0.541),
     rgba(236, 163, 28, 0.829)); 
+    font-family: 'DynaPuff', cursive;
 
     .titulo__cumples{
         display: flex;
-        padding-top: 100px;
+        padding-top: 120px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;  
+        text-align: center;
         color: red;
         h2{
-            font-size: clamp(4rem,4.5rem,6rem);
+            font-size: clamp(3rem,4.5rem,6rem);
             color: var(--oscuro);
         }
         .img__cumple{
@@ -34,6 +37,7 @@
         h2{
             border-bottom: 3px solid var(--oscuro);
             color: var(--oscuro);
+            text-align: center;
         }
 
         h3{
@@ -114,3 +118,273 @@
     }
 }
 
+
+
+
+// cumples animacion DESPUES TENGO Q MODIFICAR
+
+// .animation_container{
+//     position: relative;
+// }
+
+.animation__pin{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    height: 160px;
+    background: rgb(253, 158, 68);
+    width: 100vw;
+    top: 75px;
+}
+
+.animation__pin img{
+    width: 150px;
+    z-index: 60;
+}
+.titulo__kids{
+  z-index: 30;
+  position: absolute;
+  display: flex;
+  left: 110%;
+  top: 20px;
+  animation-name: tracking-in-expand;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+  color: var(--oscuro);
+  font-family: 'Russo One', sans-serif;
+
+  h2{
+    text-align: center;
+    font-size: 90px;
+    top: 0;
+  }
+}
+
+.titulo__kids2{
+    color: var(--claro);
+    animation-name: tracking-in-expand;
+}
+.piso{
+  width: 100vw;
+  background: rgb(226, 226, 202);
+  height: 60px;
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+}
+
+.lineas{
+  border-bottom: 1px solid black;
+  height: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.pin__jump{
+    position: absolute;
+    animation-name: saltar;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 20;
+}
+
+.sombra__pin{
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: rgba(39, 38, 38, 0.226);
+  border-radius: 50px;
+  z-index: -1;
+  bottom: 0px;
+  left: 40px;
+}
+
+.ball__roll{
+    position: absolute;
+    left: 85%;
+    top: 32px;
+    animation-name: girar;
+    animation-duration: 4s;
+    animation-delay: 0.3s;
+     z-index: 30;
+    animation-fill-mode: forwards;
+    /* -webkit-animation: rodar 4s;
+    animation: rodar 4s;
+    */
+
+}
+.pin__happy{
+    position: absolute;
+    top: -100vh;
+    animation-name: volver;
+    animation-delay: 1.7s;
+    animation-duration: 2.5s;
+    animation-fill-mode:backwards;
+    z-index: 40;
+}
+
+.wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 3s infinite both;
+	        animation: wobble-hor-bottom 3s infinite both;
+  z-index: 70;
+  height: 160px;
+}
+
+@keyframes girar{
+    from{
+        left: 85%;
+    }
+    to{
+        left: -120px;
+        transform: rotate(-1780deg);
+    }
+}
+
+@keyframes saltar{
+    
+  100%{
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes volver{
+    0%{
+        top: -100vh;
+    }
+
+    50%{
+      transform: translateY(0);
+    }
+    70%{
+      transform: translateY(40px);
+    }
+    80%{
+      transform: translateY(0);
+    }
+    90%{
+      transform: translateY(20px);
+    }
+    to{
+      top: 0;
+    }
+}
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+/* letras */
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    left: 10%;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-2%);
+    left: 20%;
+  }
+}
+
+/* fin letras */
+
+
+@keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+  
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+
+  @media (max-width: 800px) {
+    .animation__pin img{
+      width: 100px;
+  }
+  .animation__pin{
+    height: 100px;
+  }
+  .ball__roll{
+    /* top: 20px; */
+  }
+
+  .piso{
+    top: 70px;
+  }
+
+  .ball__roll{
+    animation-delay: 1.2s;
+  }
+
+  .titulo__kids{
+    font-size: 30px;
+  }
+
+  .sombra__pin{
+    bottom: 5px;
+  }
+  .titulo__kids{
+    h2{
+        font-size: 55px;
+    }
+  }
+  }
