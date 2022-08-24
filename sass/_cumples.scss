@@ -44,6 +44,9 @@
             color: var(--naranja);
             font-size: 1.8rem;  
             padding-top: 3rem;
+            font-family: 'Russo One', sans-serif;
+            text-align: center;
+
         }
 
         .cumples__container{
@@ -66,6 +69,10 @@
                 cursor: pointer;
                 transition: color 0.2s;
                 color: var(--oscuro);
+            font-family: 'Russo One', sans-serif;
+
+                
+
                     &::hover{
                         color: var(--medio);
                     }
@@ -79,7 +86,12 @@
 
 
 .menu__cumples{
-    h3{
+  margin: 0;  
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  h3{
         font-size: 3rem;
         display: flex;
         flex-direction: column;
@@ -92,9 +104,11 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly; 
+        justify-content: center; 
         padding-bottom: 5rem;
         padding-top: 2rem;
+        width: 100%;
+        margin: 0;
         li{
             background:var(--naranja);
             border-radius: 5px;
@@ -111,7 +125,7 @@
                 &:hover{
                     background-color: white;
                     height: 4.3rem;
-                    width: 11.8rem;
+                    width: 15.8rem;
                     color: orange;
                 }
         }
@@ -132,7 +146,7 @@
     position: relative;
     z-index: 50;
     height: 160px;
-    background: rgb(253, 158, 68);
+    background: var(--naranja);
     width: 100vw;
     top: 75px;
 }
@@ -244,7 +258,8 @@
 }
 
 @keyframes saltar{
-    
+
+
   100%{
         transform: translateY(-100vh);
     }
@@ -277,7 +292,10 @@
 	        animation: vibrate-1 0.3s linear infinite both;
 }
 /* letras */
-
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -372,7 +390,7 @@
   }
 
   .ball__roll{
-    animation-delay: 1.2s;
+    animation-delay: 1s;
   }
 
   .titulo__kids{

@@ -9,7 +9,7 @@
   }
   
   :root {
-    --oscuro:rgb(53, 45, 43);
+    --oscuro:rgb(53, 48, 48);
     --medio: rgb(136, 134, 133);
     --claro: rgb(235, 229, 225);
     --oscuroT: rgba(53, 45, 43, 0.3);
@@ -24,7 +24,10 @@
   
   html {
     scroll-behavior: smooth;
-    font-family: "Raleway";
+    // font-family: "Raleway";
+  font-family: 'Russo One', sans-serif;
+    
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   

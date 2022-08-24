@@ -1,21 +1,33 @@
 /* home new */
+
+.home__page{
+  height: 100vh;
+  background: red;
+  width: 100%;
+}
+
 .home__ristrel {
     height: 100vh;
     background: linear-gradient(
-        rgba(240, 240, 240, 0.3),
+        rgba(124, 124, 124, 0.3),
         var(--oscuroT)
       ),
-      url("../images/bife.jpg");
+      url("../images/snackpool.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+    
+   .logo__homep{
+     height: 700px;
+     max-width: 800px;
+   }
 
     .home__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.8));
         color: var(--claro);
         text-shadow: 1px 1px 2px var(--oscuro);
@@ -25,9 +37,10 @@
         position: relative;
         
         .main__title{
-            font-size: 3rem;
-            text-transform: uppercase;
-            text-align: center;
+            // font-size: 3rem;
+            // text-transform: uppercase;
+            // text-align: center;
+            display: none;
         }
 
         .flecha__container{
@@ -48,22 +61,7 @@
         
           }
 
-          .boton__home{
-            background:var(--medio);
-            width: 100px;
-            height: 50px;
-            text-align: center;
-            padding: 5px;
-            text-decoration: none;
-            color: var(--claro);
-            transition: all 0.5s;
-            border-radius: 30px;
-                 &:hover{
-                    background: rgb(44, 44, 44);
-                    color: white;
-                    width: 110px;
-                }
-        }
+
         
       }
 

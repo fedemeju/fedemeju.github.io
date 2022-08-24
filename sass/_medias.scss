@@ -35,12 +35,13 @@
             left: 55.5%;  
           }
 
-        }
+    }    
+
 
 }
 
 @media (max-width: 950px){  
-    
+
     .bola{
         animation-duration: 3s;
     } 
@@ -64,9 +65,20 @@
     .actividad{
         display: none;
     }
+
+    .resto__web{
+        display: none;
+    }
 }
 
 @media (max-width: 700px){  
+    .resto__mov{
+        display: flex;
+    }
+    .logo__homep{
+        height: 300px;
+        width: 400px;
+      }
     .image__resto{
         height: 280px;
     }
@@ -90,6 +102,13 @@
             display: none;
         }
     }
+
+    .titulo__cumples{
+        h2{
+            display: none;
+        }
+    }
+
 }
 
 @media (max-width: 768px){
@@ -110,6 +129,8 @@
         grid-column-start: span 3;
         grid-row-start: span 2;
      }
+
+
  }
 
  @media (min-width: 900px){
@@ -122,6 +143,7 @@
         grid-template-rows: 1fr 1fr;
         grid-gap: 20px;
     }
+
 
  }
 
