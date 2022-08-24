@@ -46,6 +46,15 @@
 
 }
 
+@media (max-width: 1400px){ 
+.acordion__container{
+    display: flex;
+}
+.eventos{
+    display: none;
+}
+}
+
 @media (max-width: 950px){  
 
     .bola{
@@ -135,6 +144,13 @@
         grid-column-start: span 3;
         grid-row-start: span 2;
      }
+    
+    .titulo__eventos{
+        
+        p{
+            font-size: 1.5rem;
+        }
+    }
 
 
  }
@@ -160,5 +176,6 @@
     .novedades{
         display: none;
     }
+
 
  }
