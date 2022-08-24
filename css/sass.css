@@ -7,10 +7,10 @@
 }
 
 :root {
-  --oscuro:rgb(53, 48, 48);
+  --oscuro: #302B2B;
   --medio: rgb(136, 134, 133);
   --claro: rgb(235, 229, 225);
-  --oscuroT: rgba(53, 45, 43, 0.3);
+  --oscuroT: #302b2bef;
   --naranja: rgb(248, 156, 43);
   --sombra: 7px 7px 9px -5px rgba(94,94,94,0.67);
 }
@@ -40,7 +40,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(53, 48, 48, 0.95);
+  background-color: var(--oscuroT);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 75px;
@@ -179,7 +179,7 @@ html {
 
 .home__ristrel {
   height: 100vh;
-  background: linear-gradient(rgba(124, 124, 124, 0.3), var(--oscuroT)), url("../images/snackpool.jpg");
+  background: linear-gradient(rgba(46, 45, 45, 0.3), var(--oscuroT)), url("../images/fondo.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -324,10 +324,19 @@ html {
   box-shadow: var(--sombra);
 }
 
+.borde__us {
+  width: 100vw;
+  height: 30px;
+  background: linear-gradient(rgba(46, 45, 45, 0.3), var(--oscuroT)), url("../images/fondo.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 .resto__mov {
   height: 50vh;
   width: 100vw;
-  background: linear-gradient(rgba(83, 83, 83, 0.699), var(--oscuroT)), url("../images/bife.jpg");
+  background: linear-gradient(rgba(83, 83, 83, 0.699), var(--oscuroT)), url("../images/fondo.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -981,8 +990,10 @@ h2 {
 }
 
 .left {
-  background: url("../images/snackpool.jpg") no-repeat center;
+  background: linear-gradient(rgba(46, 45, 45, 0.3), var(--oscuroT)), url("../images/fondo2.svg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -1276,8 +1287,14 @@ textarea {
   .img-container {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
   }
+  .home__page {
+    height: 60vh;
+  }
   .home__container .flecha {
     left: 55.5%;
+  }
+  .home__container .borde__us {
+    display: none;
   }
 }
 @media (max-width: 950px) {
@@ -1289,7 +1306,7 @@ textarea {
     animation-delay: 2.5s;
   }
   .logoSnack {
-    left: 20px;
+    left: 26px;
   }
   .actividad__container {
     flex-wrap: wrap;

@@ -21,6 +21,7 @@
 }
 .us__2{
     background: var(--oscuro);
+    
     flex-direction: row-reverse;
     h2{
         font-size: 2.5rem;
@@ -117,7 +118,18 @@
     
     }
 }
-
+.borde__us{
+    width: 100vw;
+    height: 30px;
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.3),
+        var(--oscuroT)
+      ),
+      url("../images/fondo.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 .resto__mov{
     height: 50vh;
     width: 100vw;
@@ -125,7 +137,7 @@
         rgba(83, 83, 83, 0.699),
         var(--oscuroT)
         ),
-        url("../images/bife.jpg");
+        url("../images/fondo.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;

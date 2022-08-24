@@ -41,8 +41,14 @@
 }
 
 .left{
-	background: url("../images/snackpool.jpg") no-repeat center;
-	background-size: cover;
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.3),
+        var(--oscuroT)
+      ),
+      url("../images/fondo2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 	height: 100%;
 
 }

@@ -29,11 +29,17 @@
     .img-container{
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5))
     }
+    .home__page{
+        height: 60vh;
+    }
     .home__container {
-
           .flecha{
             left: 55.5%;  
           }
+
+    .borde__us{
+        display: none;
+    }
 
     }    
 
@@ -51,7 +57,7 @@
         animation-delay: 2.5s;
     }
     .logoSnack{
-        left: 20px;
+        left: 26px;
     }
 
     .actividad__container{
