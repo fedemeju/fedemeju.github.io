@@ -8,7 +8,7 @@
     align-items: center;
     background: var(--claro);
     padding-bottom: 10px;
-    padding-top: 90px;
+    padding-top: 40px;
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 
 }
@@ -95,6 +95,16 @@
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 20px;
+    padding-top: 50PX;
+    background: var(--oscuro);
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.3),
+        var(--oscuroT)
+      ),
+      url("../images/fondobyn.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     h2{
         font-size: 6rem;
     }
@@ -137,7 +147,7 @@
         rgba(83, 83, 83, 0.699),
         var(--oscuroT)
         ),
-        url("../images/fondo.svg");
+        url("../images/fondobyn.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;

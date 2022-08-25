@@ -1,10 +1,5 @@
 /* home new */
 
-.home__page{
-  height: 100vh;
-  background: red;
-  width: 100%;
-}
 
 .home__ristrel {
     height: 100vh;
@@ -12,7 +7,7 @@
         rgba(46, 45, 45, 0.3),
         var(--oscuroT)
       ),
-      url("../images/fondo.svg");
+      url("../images/fondobyn.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +16,7 @@
    .logo__homep{
      height: 700px;
      max-width: 800px;
+     padding-top: 150px;
    }
 
     .home__container {
