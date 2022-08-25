@@ -33,11 +33,16 @@
         height: 60vh;
     }
     .home__container {
-          .flecha{
-            padding-bottom: 50px; 
+    
+        .flecha{
+            padding-bottom: 120px; 
           }
 
     .borde__us{
+        display: none;
+    }
+
+    .us__image__container{
         display: none;
     }
 
