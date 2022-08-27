@@ -133,6 +133,10 @@ h1 {
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
   }
+
+  .cumples_eventos{
+    background: rgb(250, 176, 66);
+  }
   .accordionTitle:hover {
     background-color: var(--oscuro);
   }
@@ -159,6 +163,7 @@ h1 {
       font-size: 1rem;
     }
   }
+
   @media all {
     .accordionItem {
       max-height: 50em;

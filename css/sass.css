@@ -301,11 +301,7 @@ html {
   justify-content: space-evenly;
   padding-bottom: 60px;
   padding-top: 50PX;
-  background: var(--oscuro);
-  background: linear-gradient(rgba(46, 45, 45, 0.3), var(--oscuroT)), url("../images/fondobyn.svg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background: var(--oscuroT);
 }
 .resto__web h2, .snack__web h2 {
   font-size: 6rem;
@@ -320,19 +316,19 @@ html {
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background: linear-gradient(rgba(87, 87, 87, 0.3), var(--oscuroT)), url("../images/bife.jpg");
+  background: url("../images/bife.jpg");
   background-size: cover;
   box-shadow: var(--sombra);
 }
 
 .snack__web {
-  background: linear-gradient(rgba(46, 45, 45, 0.3), var(--oscuroT)), url("../images/fondo.svg");
+  background: var(--claro);
 }
 .snack__web .us__container__resto {
-  background: linear-gradient(rgba(87, 87, 87, 0.3), var(--oscuroT)), url("../images/snack.png");
+  background: url("../images/snack.png");
 }
 .snack__web .subtitulo__nosotros {
-  color: var(--claro);
+  color: var(--medio);
 }
 
 .borde__us {
@@ -511,6 +507,10 @@ h1 {
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+}
+
+.cumples_eventos {
+  background: rgb(250, 176, 66);
 }
 
 .accordionTitle:hover {
